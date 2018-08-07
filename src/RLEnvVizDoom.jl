@@ -89,17 +89,17 @@ end
 
 function interact!(a, env::VizDoomEnvironment)
     r = vz.make_action(env.game, env.actions[a])
-    state = vz.get_state(env.game)
+    state = vz.get_screen(env.game)
     done = vz.is_episode_finished(env.game)
     sleep(env.sleeptime)
     return state, r, done
 end
 function reset!(env::VizDoomEnvironment)
     vz.new_episode(env.game)
-    return Nothing
+    return nothing
 end
 function getstate(env::VizDoomEnvironment)
-    vz.get_state(env.game), vz.is_episode_finished(env.game)
+    vz.get_screen(env.game), vz.is_episode_finished(env.game)
 end
 
 close!(env::VizDoomEnvironment) = vz.close(env.game)
