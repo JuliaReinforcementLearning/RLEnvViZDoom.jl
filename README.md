@@ -1,7 +1,7 @@
 # RLEnvVizDoom
 
-[![Build Status](https://travis-ci.org/Johanni Brea/RLEnvVizDoom.jl.svg?branch=master)](https://travis-ci.org/Johanni Brea/RLEnvVizDoom.jl)
+[![Build Status](https://travis-ci.org/JuliaReinforcementLearning/RLEnvVizDoom.jl.svg?branch=master)](https://travis-ci.org/JuliaReinforcementLearning/RLEnvVizDoom.jl)
 
-[![Coverage Status](https://coveralls.io/repos/Johanni Brea/RLEnvVizDoom.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/Johanni Brea/RLEnvVizDoom.jl?branch=master)
+[![Coverage Status](https://coveralls.io/repos/JuliaReinforcementLearning/RLEnvVizDoom.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/JuliaReinforcementLearning/RLEnvVizDoom.jl?branch=master)
 
-[![codecov.io](http://codecov.io/github/Johanni Brea/RLEnvVizDoom.jl/coverage.svg?branch=master)](http://codecov.io/github/Johanni Brea/RLEnvVizDoom.jl?branch=master)
+[![codecov.io](http://codecov.io/github/JuliaReinforcementLearning/RLEnvVizDoom.jl/coverage.svg?branch=master)](http://codecov.io/github/JuliaReinforcementLearning/RLEnvVizDoom.jl?branch=master)
