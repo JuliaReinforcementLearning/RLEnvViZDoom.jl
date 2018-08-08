@@ -1,6 +1,6 @@
 # RLEnvVizDoom
 
-[![Build Status](https://travis-ci.org/JuliaReinforcementLearning/RLEnvVizDoom.jl.svg?branch=master)](https://travis-ci.org/JuliaReinforcementLearning/RLEnvVizDoom.jl)
+[![Build Status](https://travis-ci.com/JuliaReinforcementLearning/RLEnvVizDoom.jl.svg?branch=master)](https://travis-ci.com/JuliaReinforcementLearning/RLEnvVizDoom.jl)
 
 [![Coverage Status](https://coveralls.io/repos/JuliaReinforcementLearning/RLEnvVizDoom.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/JuliaReinforcementLearning/RLEnvVizDoom.jl?branch=master)
 
