@@ -455,6 +455,6 @@ JLCXX_MODULE ViZDoom(jlcxx::Module &mod)
     mod.method("doom_tics_to_sec", doomTicsToSec);
     mod.method("sec_to_doom_tics", secToDoomTics);
     mod.method("doom_fixed_to_double", [](double x) { return doomFixedToDouble(x); });
-    mod.method("is_binary_button", isBinaryButon);
+    mod.method("is_binary_button", isBinaryButton);
     mod.method("is_delta_button", isDeltaButton);
 }
