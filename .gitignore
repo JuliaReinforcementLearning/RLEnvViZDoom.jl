@@ -5,3 +5,5 @@
 Manifest.toml
 deps/usr/
 deps/build.log
+
+_vizdoom.ini
