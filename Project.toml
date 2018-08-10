@@ -1,0 +1,9 @@
+name = "RLEnvVizDoom"
+uuid = "2ed008f4-9c5f-11e8-27fc-4f89dad3b81d"
+authors = ["Johanni Brea <johanni.brea@epfl.ch>", "Jun Tian <find_my_way@foxmail.com>"]
+version = "0.1.0"
+
+[deps]
+BinaryProvider = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
+CxxWrap = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
