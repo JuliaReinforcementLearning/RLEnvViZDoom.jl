@@ -15,6 +15,7 @@ addons:
   apt: # apt-get for linux
     packages:
     - cmake
+    - boost
     - build-essential
     - zlib1g-dev
     - libsdl2-dev
