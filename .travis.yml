@@ -35,4 +35,4 @@ addons:
 #   - if [ $TRAVIS_OS_NAME = osx ]; then brew install gcc; fi
 
 script:
-  - julia -e 'using Pkg; Pkg.add(pwd()); Pkg.build("RLEnvVizDoom");'
+  - julia -e 'using Pkg; Pkg.add(PackageSpec(pwd())); Pkg.build("RLEnvVizDoom");'
