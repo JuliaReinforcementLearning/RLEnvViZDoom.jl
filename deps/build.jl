@@ -15,5 +15,5 @@ run(`rm -rf $(joinpath(vizdoom_dir, "src", "lib_julia"))`)
 run(`cp -r $(joinpath(deps_dir, "lib_julia")) $(joinpath(vizdoom_dir, "src"))`)
 
 const JLCxx_DIR = get(ENV, "JLCXX_DIR", joinpath(dirname(CxxWrap.jlcxx_path), "cmake", "JlCxx"))
-cd(() -> run(`cmake -DJlCxx_DIR=$(JLCxx_DIR) -DBUILD_JULIA=ON -DJulia_EXECUTABLE=$(joinpath(Sys.BINDIR, "julia")) .`), vizdoom_dir)
-cd(() -> run(`make`), vizdoom_dir)
+cd(() -> success(`cmake -DJlCxx_DIR=$(JLCxx_DIR) -DBUILD_JULIA=ON -DJulia_EXECUTABLE=$(joinpath(Sys.BINDIR, "julia")) .`), vizdoom_dir)
+cd(() -> success(`make`), vizdoom_dir)
