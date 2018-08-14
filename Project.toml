@@ -1,0 +1,9 @@
+name = "RLEnvViZDoom"
+uuid = "d3c5cb96-9fca-11e8-0692-d95bfde9fe2d"
+authors = ["Johanni Brea <jbrea@users.noreply.github.com>"]
+version = "0.1.0"
+
+[deps]
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+ReinforcementLearning = "158674fc-8238-5cab-b5ba-03dfc80d1318"
+ViZDoom = "befec858-9df8-11e8-00a8-a968a6be5c52"

@@ -1,9 +1,13 @@
-using RLEnvVizDoom
-@static if VERSION < v"0.7.0-DEV.2005"
-    using Base.Test
-else
-    using Test
-end
+using RLEnvViZDoom, Test
+import RLEnvViZDoom: interact!, reset!, getstate
 
-# write your own tests here
-@test 1 == 2
+function test1()
+    env = ViZDoomEnvironment("", "map01")
+    s, r, done = interact!(1, env)
+    @test typeof(s) == Array{UInt8, 1}
+    s = reset!(env)
+    @test typeof(s) == Array{UInt8, 1}
+    s, done = getstate(env)
+    @test typeof(s) == Array{UInt8, 1}
+end
+test1()
