@@ -1,4 +1,3 @@
-__precompile__(false)
 module RLEnvViZDoom
 using Reexport
 @reexport using ReinforcementLearning
