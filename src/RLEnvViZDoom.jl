@@ -50,32 +50,18 @@ export ViZDoomEnvironment
                        episodelength = 500,
                        render = defaultrenderdict())
 """
-function ViZDoomEnvironment(scenario, map; 
-                            actions = listallactions(),
-                            mode = :PLAYER,
-                            screenformat = :RGB24,
-                            screenresolution = :RES_160X120,
-                            showscreen = false,
-                            livingreward = 0,
-                            episodelength = 500,
-                            render = defaultrenderdict())
-    game = vz.DoomGame()
-    vz.set_doom_scenario_path(game, scenario)
-    vz.set_doom_map(game, map)
-    vz.set_mode(game, getfield(vz, mode))
-    vz.set_screen_format(game, getfield(vz, screenformat))
-    vz.set_screen_resolution(game, getfield(vz, screenresolution))
-    vz.set_window_visible(game, showscreen)
-    vz.set_living_reward(game, livingreward)
-    vz.set_episode_timeout(game, episodelength)
-    for a in actions vz.add_available_button(game, getfield(vz, a)) end
-    for (r, v) in render getfield(vz, r)(game, v) end
-    na = length(actions)
-    if showscreen
+function ViZDoomEnvironment(; kw...)
+    defaults = (screen_format = :GRAY8, screen_resolution = :RES_160X120, 
+                window_visible = false, living_reward = 0, 
+                episode_timeout = 500)
+    config = merge(defaults, kw)
+    game = vz.basic_game(; config...)
+    if config[:window_visible]
         sleeptime = 1.0 / vz.DEFAULT_TICRATE
     else
         sleeptime = 0.
     end
+    na = haskey(config, :available_buttons) ? length(config[:available_buttons]) : 3
     env = ViZDoomEnvironment(game, 
                              [Float64[i == j for i in 1:na] for j in 1:na], 
                              sleeptime)
