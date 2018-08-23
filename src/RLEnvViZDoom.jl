@@ -33,13 +33,13 @@ struct ViZDoomEnvironment
 end
 export ViZDoomEnvironment
 """
-    ViZDoomEnvironment(; kw...)
+    ViZDoomEnvironment(; add_game_args = "", kw...)
 
 Creates a new ViZDoomEnvironment. Use `list_options()` for possible `kw` and
 `list_available_buttons()`, `list_screen_resolution()`, `list_screen_format()`,
 `list_mode()` for possible values.
 """
-function ViZDoomEnvironment(; kw...)
+function ViZDoomEnvironment(; add_game_args = "", kw...)
     defaults = (screen_format = :GRAY8, screen_resolution = :RES_160X120, 
                 window_visible = false, living_reward = 0, 
                 episode_timeout = 500)
@@ -52,6 +52,7 @@ function ViZDoomEnvironment(; kw...)
         end
     end
     game = vz.basic_game(; config...)
+    vz.add_game_args(game, add_game_args)
     if config[:window_visible]
         sleeptime = 1.0 / vz.DEFAULT_TICRATE
     else
