@@ -1,5 +1,5 @@
-using RLEnvViZDoom, Test
-import RLEnvViZDoom: interact!, reset!, getstate
+using ReinforcementLearningEnvironmentViZDoom, Test
+import ReinforcementLearningEnvironmentViZDoom: interact!, reset!, getstate
 
 function test1()
     env = ViZDoomEnvironment("", "map01")

@@ -1,4 +1,4 @@
-module RLEnvViZDoom
+module ReinforcementLearningEnvironmentViZDoom
 using Reexport
 @reexport using ReinforcementLearning
 import ReinforcementLearning:interact!, reset!, getstate

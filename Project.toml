@@ -1,4 +1,4 @@
-name = "RLEnvViZDoom"
+name = "ReinforcementLearningEnvironmentViZDoom"
 uuid = "d3c5cb96-9fca-11e8-0692-d95bfde9fe2d"
 authors = ["Johanni Brea <jbrea@users.noreply.github.com>"]
 version = "0.1.0"

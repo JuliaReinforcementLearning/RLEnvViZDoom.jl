@@ -1,4 +1,4 @@
-using RLEnvViZDoom, Flux, GR, JLD2
+using ReinforcementLearningEnvironmentViZDoom, Flux, GR, JLD2
 using Compat: @info
 const withgpu = true
 const gpudevice = 0

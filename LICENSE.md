@@ -1,4 +1,4 @@
-The RLEnvVizDoom.jl package is licensed under the MIT "Expat" License:
+The ReinforcementLearningEnvironmentVizDoom.jl package is licensed under the MIT "Expat" License:
 
 > Copyright (c) 2018: Johanni Brea.
 >
