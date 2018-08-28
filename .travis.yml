@@ -25,7 +25,7 @@ addons:
     packages:
       - g++-6
 env:
-  - MATRIX_EVAL="CC=gcc-6 && CXX=g++-6"
+  - CC=gcc-6 && CXX=g++-6
 
 ## uncomment the following lines to override the default test script
 #script:
