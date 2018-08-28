@@ -17,15 +17,15 @@ matrix:
   allow_failures:
   - julia: nightly
   include:
-      - os: linux
+    - os: linux
       addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-6
-      env:
-        - MATRIX_EVAL="CC=gcc-6 && CXX=g++-6"
+      apt:
+        sources:
+          - ubuntu-toolchain-r-test
+        packages:
+          - g++-6
+    env:
+      - MATRIX_EVAL="CC=gcc-6 && CXX=g++-6"
 
 ## uncomment and modify the following lines to manually install system packages
 #addons:
