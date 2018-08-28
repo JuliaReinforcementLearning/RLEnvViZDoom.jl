@@ -1,7 +1,7 @@
 ## Documentation: http://docs.travis-ci.com/user/languages/julia/
 language: julia
 os:
-  - osx
+# - osx
   - linux
 julia:
   - 0.7
@@ -19,14 +19,31 @@ matrix:
   - julia: nightly
 
 addons:
-  apt:
+  apt: # apt-get for linux
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - g++-4.9
+    - g++-4.9
+    - cmake
+    - libboost-all-dev
+    - build-essential
+    - zlib1g-dev
+    - libsdl2-dev
+    - libjpeg-dev
+    - nasm
+    - tar
+    - libbz2-dev
+    - libgtk2.0-dev
+    - git
+    - libfluidsynth-dev
+    - libgme-dev
+    - libopenal-dev
+    - timidity
+    - libwildmidi-dev
+    - unzip
+
 env:
   - CC=gcc-4.9 && CXX=g++-4.9
-
 ## uncomment the following lines to override the default test script
 #script:
 #  - julia -e 'Pkg.clone(pwd()); Pkg.build("ReinforcementLearningEnvironmentVizDoom"); Pkg.test("ReinforcementLearningEnvironmentVizDoom"; coverage=true)'
