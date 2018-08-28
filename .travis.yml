@@ -23,9 +23,9 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - g++-6
+      - g++-4.9
 env:
-  - CC=gcc-6 && CXX=g++-6
+  - CC=gcc-4.9 && CXX=g++-4.9
 
 ## uncomment the following lines to override the default test script
 #script:
