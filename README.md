@@ -1,4 +1,4 @@
-# ReinforcementLearningEnvironmentViZDoom
+# DEPRECATED! PLEASE USE [ReinforcementLearningEnvironments.jl](https://github.com/JuliaReinforcementLearning/ReinforcementLearningEnvironments.jl)
 
 [![Build Status](https://travis-ci.com/JuliaReinforcementLearning/ReinforcementLearningEnvironmentViZDoom.jl.svg?branch=master)](https://travis-ci.com/JuliaReinforcementLearning/ReinforcementLearningEnvironmentViZDoom.jl)
 
